@@ -7,6 +7,6 @@ import subprocess
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.wait_for_edge(9, GPIO.FALLING)
+GPIO.wait_for_edge(5, GPIO.FALLING)
 
 subprocess.call(['shutdown', '-h', 'now'], shell=False)
